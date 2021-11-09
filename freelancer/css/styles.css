@@ -17,10 +17,29 @@ body{
 
 .titulo {
     text-align: center;
-    font-size: 3.8rem;
-    
+    font-size: 3.8rem;  
 }
 
 span {
     font-size: 2rem;
+}
+
+.nav-bg {
+    background-color: var(--primario);
+}
+
+.navegacion {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenido {
+    width: 120rem;
+    margin: 0 auto; 
+}
+
+.navegacion a {
+    color: var(--blanco);
+    text-decoration: none;
 }
