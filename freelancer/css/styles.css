@@ -19,9 +19,20 @@ body{
     font-family: 'Krub', sans-serif;
 }
 
-.titulo {
+h1 {
+    font-size:3.8;
+}
+
+h2 {
+    font-size: 2.8;
+}
+
+h3 {
+    font-size: 1.8;
+}
+
+h1, h2, h3 {
     text-align: center;
-    font-size: 3.8rem;  
 }
 
 .titulo span {
@@ -32,6 +43,25 @@ body{
     max-width: 120rem;
     margin: 0 auto; 
 }
+
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    .boton {
+        width: auto;}
+    }
 
 .nav-bg {
     background-color: var(--primario);
@@ -67,14 +97,29 @@ body{
     background-image: url(../img/analisis-demanda-inmobiliaria.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
-    padding: 20px;
+    height: 360px;
     position: relative;
 }
 
 .contenido-hero {
     position: absolute;
-    background-color: indigo;
-    width: 2rem;
-    height: 2rem;
+    background-color: rgba( 0 0 0 / 70%) ;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contenido-hero h2,
+.contenido-hero p {
+    color: var(--blanco);
+}
+
+.ubicacion {
+    display: flex;
+    align-items: flex-end;
 }
