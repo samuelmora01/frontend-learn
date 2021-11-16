@@ -4,6 +4,7 @@
     --primario:#00abfb;  
     --secundario:#ffc107;
     --gris:#757575;
+    --grisclaro: #dfe9f3; 
 }
 
 html {
@@ -17,6 +18,17 @@ html {
 body{   
     font-size: 16px;
     font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to right, var(--grisclaro) 0%,var(--blanco) 100% ) ;
+}
+
+
+
+/* css matic*/
+.sombra {
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.34);
+-moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.34);
+box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.34);
+background-color:var(--gris);
 }
 
 h1 {
@@ -39,6 +51,7 @@ h1, h2, h3 {
     font-size: 2rem;
 }
 
+
 .contenido {
     max-width: 120rem;
     margin: 0 auto; 
@@ -58,13 +71,21 @@ h1, h2, h3 {
     text-align: center;
 }
 
-@media (min-width:768px) {
-    .boton {
-        width: auto;}
-    }
 
+
+/* comentarios */
+/* 1 rem = 1 px */  
+
+
+/*navegacion*/
 .nav-bg {
     background-color: var(--primario);
+}
+
+@media (min-width:768px) {
+    .boton {
+        width: auto;
+    }
 }
 
 .navegacion {
@@ -81,6 +102,8 @@ h1, h2, h3 {
 }
 
 .navegacion a {
+    text-align: center;
+    display: block;
     color: var(--blanco);
     text-decoration: none;
     font-size: 2rem;
@@ -97,8 +120,9 @@ h1, h2, h3 {
     background-image: url(../img/analisis-demanda-inmobiliaria.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 360px;
+    height: 450px;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .contenido-hero {
@@ -122,4 +146,40 @@ h1, h2, h3 {
 .ubicacion {
     display: flex;
     align-items: flex-end;
+}
+
+/**servicios**/
+
+@media (min-width:768px) {
+    .servicios {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    column-gap: 2rem;
+        }
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h3 {
+color: var(--primario);
+font-weight: normal;
+} 
+
+.servicio p {
+    line-height: 2;
+    text-align: center;
+}
+
+.servicio .icons {
+ height: 15rem;
+ width: 15rem;
+ background-color: var(--secundario);
+ border-radius: 50%;
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
 }
