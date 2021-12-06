@@ -183,3 +183,27 @@ font-weight: normal;
  justify-content: space-evenly;
  align-items: center;
 }
+
+/**contacto**/
+.formulario {
+background-color: var(--grisclaro);
+width: min( 60rem, 100% ); /**utiliza el valor mas pequeño**/
+margin: 0 auto;
+border-radius: 1rem;
+padding: 2rem;
+}
+
+.formulario fieldset {
+    border:none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario); 
+}
+
+
+
