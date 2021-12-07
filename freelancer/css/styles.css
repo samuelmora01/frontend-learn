@@ -69,13 +69,32 @@ h1, h2, h3 {
     border-radius: .5rem;
     width: 90%;
     text-align: center;
+    border: none;
 }
-
-
 
 /* comentarios */
 /* 1 rem = 1 px */  
 
+
+/**utlidades**/
+
+@media (min-width:768px){
+ .w-sm-100 {
+     width: auto;
+ }
+}
+
+.flex {
+ display: flex;
+}
+
+.alinear-derecha {
+ justify-content: flex-end;
+}
+
+.w-sm-100 {
+    width:100%;
+}
 
 /*navegacion*/
 .nav-bg {
@@ -86,6 +105,11 @@ h1, h2, h3 {
     .boton {
         width: auto;
     }
+}
+
+.boton:hover {
+    cursor: pointer; /**cambiar a mano el cursor**/
+
 }
 
 .navegacion {
@@ -190,7 +214,7 @@ background-color: var(--grisclaro);
 width: min( 60rem, 100% ); /**utiliza el valor mas pequeño**/
 margin: 0 auto;
 border-radius: 1rem;
-padding: 2rem;
+padding-top: 2rem;
 }
 
 .formulario fieldset {
@@ -200,10 +224,29 @@ padding: 2rem;
 .formulario legend {
     text-align: center;
     font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
+    font-weight: 700; /**negrillas**/
+    margin-bottom: 2rem; /**separar del inicio**/
     color: var(--primario); 
 }
 
+.contenedorcmp {
 
+}
 
+.campo {
+ margin-bottom: 1rem;
+}
+
+.campo label {
+ color: var(--gris);
+ margin-bottom: .5rem;
+ font-weight: bold;
+ display: block;
+}
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding-top: 1.5rem;
+    border-radius: 1.5rem;
+}
