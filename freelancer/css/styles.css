@@ -9,6 +9,8 @@
 
 html {
     font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
 }
 
 *, *:before, *:after {
@@ -18,7 +20,7 @@ html {
 body{   
     font-size: 16px;
     font-family: 'Krub', sans-serif;
-    background-image: linear-gradient(to right, var(--grisclaro) 0%,var(--blanco) 100% ) ;
+    background-image: linear-gradient(to top, var(--blanco) 0%,var(--grisclaro) 100% ) ;
 }
 
 
@@ -170,6 +172,14 @@ h1, h2, h3 {
 .ubicacion {
     display: flex;
     align-items: flex-end;
+}
+
+/**scroll**/
+.servicios,
+.navegacion,
+.formulario  {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 /**servicios**/
