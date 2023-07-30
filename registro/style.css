@@ -1,0 +1,121 @@
+body {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 62.5%;
+}
+
+form {
+    box-shadow: 0 0 2rem rgb(0, 0, 0, 0.2);
+    padding: 5rem 3.5rem;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 38rem;
+}
+
+form h2 {
+    font-size: 3.5rem;
+    color: black;
+    margin: 0;
+}
+
+form p {
+    font-size: 1.6rem;
+    color: grey;
+    margin-bottom: 3.5rem;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 25   rem;
+    margin-bottom: 3rem;
+}
+
+input {
+    color: black;
+    padding: 2rem 5rem 2rem 7rem;
+    width: 70%;
+    border-radius: 2.5rem;
+    border: 0;
+    box-shadow: 0 0 2rem rgb(192, 203, 251, 0.7);
+    outline: none;
+    font-size: 1.7rem;
+}
+
+input::placeholder {
+    font-size: 1.5rem;
+    color: rgb(13, 159, 204);
+}
+
+.input-icon {
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-55%);
+}
+
+.btn {
+    width: 90%;
+    align-items: center;
+    margin-left: 2rem;
+    padding: 2rem;
+    background: linear-gradient(
+        90deg,
+        rgb(140, 43, 231, 1)25%,
+        rgb(61,1,245,1)100%);
+        box-shadow: 0 0 2rem rgb(192, 203, 251, 0.7);
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        cursor: pointer;
+}
+
+btn:hover {
+    background: rgb(153, 47, 252);
+}
+
+.success {
+    position: absolute;
+    top: 0;
+    color:forestgreen;
+    font-size: 1.8rem;
+}
+
+.error {
+    position: absolute;
+    top: 0;
+    color: rgb(245, 0, 0)(75, 3, 3);
+    font-size: 1.8rem;
+}
+
+@media(max-width:991px) {
+    body {
+        padding: 1rem;
+    }
+
+    form {
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .input-wrapper {
+        position: relative;
+        width: 88%;
+        margin-bottom: 3.5rem;
+    }
+
+    input {
+        padding: 2rem 0 2rem 4.5rem;
+    }
+
+    .input-icon {
+        height: 2rem;
+        width: 2rem;
+    }
+}
