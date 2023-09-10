@@ -1,0 +1,16 @@
+body {
+    background-color: cadetblue;
+    color: #fff;
+    text-align: center;
+}
+
+.img {
+    width: 500px;
+    height: 500px;
+}
+
+p {
+    text-align: center;
+    color: #fff;
+    font-size: 5rem;
+}
