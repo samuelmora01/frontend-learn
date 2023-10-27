@@ -97,7 +97,7 @@
 	}
 
 
-	$conn= mysql_connect($hostname, $username, $password, $database);
+	$conn= mysqli_connect($hostname, $username, $password, $database);
 
 
 	$sql="SELECT * FROM votacionsancristobal.tbl_admin WHERE admin_password='".$old."'";
